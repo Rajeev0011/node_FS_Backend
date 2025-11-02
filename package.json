@@ -1,0 +1,25 @@
+{
+  "name": "node_fs_backend",
+  "version": "1.0.0",
+  "description": "Node Rest API Backend",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "start": "nodemon server.js",
+    "devstart": "node run server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node_FS_Backend"
+  },
+  "author": "Rajeev Ranjan",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "jest": "^30.2.0",
+    "nodemon": "^3.1.10"
+  }
+}
