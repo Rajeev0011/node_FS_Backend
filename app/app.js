@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const userRouter = require('../router/userRouter.js');
+const { connect } = require('../db/db.js');
 const app = express();
 
 // Middleware to parse JSON requests
@@ -39,5 +40,7 @@ app.use((error, req, res, next) => {
     },
   });
 });
+
+connect();
 
 module.exports = app;
