@@ -1,6 +1,6 @@
 const express = require('express');
 const cors = require('cors');
-const userRouter = require('../router/userRouter.js');
+const bookRouter = require('../router/bookRouter.js');
 const { connect } = require('../db/db.js');
 const app = express();
 
@@ -23,7 +23,7 @@ app.get('/', (req, res, next) => {
 });
 
 // Import and use user routes
-app.use('/users', userRouter);
+app.use('/users', bookRouter);
 
 //handleError
 app.use((req, res, next) => {
