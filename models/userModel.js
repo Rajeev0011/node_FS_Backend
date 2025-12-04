@@ -4,7 +4,6 @@ const userSchema = mongoose.Schema({
   // _id, firstName, lastName, address, city, state, zip, email, password
 
   _id: mongoose.Schema.Types.ObjectId,
-
   firstName: {
     type: String,
     required: true,
@@ -39,4 +38,4 @@ const userSchema = mongoose.Schema({
   },
 });
 
-module.exports = mongoose.Model('User', userSchema);
+module.exports = mongoose.model('User', userSchema);
